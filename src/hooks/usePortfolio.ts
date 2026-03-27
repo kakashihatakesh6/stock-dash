@@ -42,7 +42,8 @@ export function usePortfolio() {
 
   useEffect(() => {
     fetchData();
-    const interval = setInterval(fetchData, 15000);
+    // const interval = setInterval(fetchData, 15000); // 15 seconds
+    const interval = setInterval(fetchData, 600000); // 10 minutes
     return () => clearInterval(interval);
   }, [fetchData]);
 

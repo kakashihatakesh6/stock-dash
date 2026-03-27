@@ -139,7 +139,7 @@ export default function Dashboard() {
             <p className="text-slate-400 mt-2 text-sm">
               Powered by Alpha Vantage · Last updated:{' '}
               <span className="text-slate-300">{lastRefreshed ? lastRefreshed.toLocaleTimeString() : '…'}</span>
-              {' '}· Auto-refresh every 15s
+              {' '}· Auto-refresh every 10m
             </p>
           </div>
           <div className="flex flex-wrap items-center gap-4">
